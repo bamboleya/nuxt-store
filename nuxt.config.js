@@ -46,8 +46,7 @@ module.exports = {
     'nuxt-webfontloader',
     // '@nuxtjs/svg',
     'cookie-universal-nuxt',
-    '@nuxtjs/style-resources',
-	'@nuxtjs/fontawesome', 
+    '@nuxtjs/style-resources', 
     ['nuxt-vuex-localstorage', {
       ...(isDev && {
         mode: 'debug'
@@ -56,13 +55,7 @@ module.exports = {
     }]
   ],
   
-  fontawesome: {
-	component: 'fa',
-    icons: {
-      solid: true,
-	  regular: false
-    }
-  },
+
 
   webfontloader: {
     events: false,
