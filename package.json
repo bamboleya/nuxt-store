@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "analyze": "cross-env NODE_ENV=production  nuxt build --analyze",
-    "build": "cross-env NODE_ENV=production nuxt build",
-    "buildandstart": "cross-env NODE_ENV=production nuxt build && cross-env NODE_ENV=production nuxt start",
-    "dev": "cross-env NODE_ENV=development NUXT_PORT=3000 nuxt",
-    "start": "cross-env NODE_ENV=production nuxt start"
-  },
+   "dev": "NUXT_PORT=process.env.PORT nuxt",
+   "build": "nuxt build",
+   "start": "nuxt start",
+ },
   "dependencies": {
     "@nuxtjs/axios": "5.9.5",
     "@nuxtjs/fontawesome": "^1.1.2",
